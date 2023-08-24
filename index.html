@@ -74,22 +74,37 @@
         <!-- Container wrapper -->
     </nav>
 
-    <!-- Contact Module 3 -->
+    <!-- Contact Module -->
     <div class="container w-75 shadow p-2 my-5 rounded">
         <div class="container text-center fw-bold fs-3">Contact Us</div>
         <div class="container w-75 mx-auto my-4 border-test justify-content-center align-items-center">
-            <form action="https://formsubmit.co/f7u23dg4e@gmail.com" method="POST">
+            <form action="https://formsubmit.co/b09507035@g.ntu.edu.tw" method="POST">
+                <!--Honeypot-->
+                <!--
+                <input type="text" name="_honey" style="display: none;">
+                -->
+
+                <!-- Disable Captcha -->
+                <!--
+                <input type="hidden" name="_captcha" value="false">
+                -->
+
+                <!-- Success Page -->
+                <!--
+                <input type="hidden" name="_next" value="./success.html">
+                -->
+
                 <div class="my-3">
-                    <label class="form-label">Your Name</label>
-                    <input type="text" name="name" class="form-control" placeholder="" required>
+                    <label for="name" class="form-label">Your Name</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="" required>
                 </div>
                 <div class="mb-3">
-                    <label class="form-label">Email address</label>
-                    <input type="email" name="email" class="form-control" placeholder="" required>
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="" required>
                 </div>
                 <div class="mb-3">
-                    <label class="form-label">Type your message here...</label>
-                    <textarea class="form-control" name="message" rows="8" required></textarea>
+                    <label for="message" class="form-label">Type your message here...</label>
+                    <textarea class="form-control" name="message" id="message" rows="8" required></textarea>
                 </div>
                 <div class="mb-3 text-center">
                     <button type="submit" name="submit" class="btn btn-primary">Submit</button>
